@@ -26,6 +26,18 @@
 <a class='dribbble' href='https://dribbble.com/shots/7112021-Order-confirm-animation' target='_blank'></a>
   <img src='https://cdn.dribbble.com/assets/dribbble-ball-mark-2bd45f09c2fb58dbbfb44766d5d1d07c5a12972d602ef8b32204d28fa3dda554.svg'>
 
-  <script src="js.js"></script>
+  <script>
+    $('.order').click(function(e) {
+
+    let button = $(this);
+
+    if(!button.hasClass('animate')) {
+        button.addClass('animate');
+        setTimeout(() => {
+            button.removeClass('animate');
+        }, 10000);
+    }
+
+});</script>
 </body>
 </html>
